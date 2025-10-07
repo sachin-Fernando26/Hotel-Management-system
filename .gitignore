@@ -1,0 +1,10 @@
+/build/
+/dist/
+/nbproject/private/
+/nbproject/configs/
+/test/
+/nbactions.xml
+/nb-configuration.xml
+*.class
+*.jar
+*.log
