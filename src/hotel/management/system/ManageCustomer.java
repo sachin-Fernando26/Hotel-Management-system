@@ -440,7 +440,7 @@ public class ManageCustomer extends javax.swing.JFrame {
             return;
         }
 
-        // proceed with your existing confirmation + delete logic
+        // proceed with existing confirmation
         int confirm = JOptionPane.showConfirmDialog(null, "Are you sure you want to delete this record?","Confirm Delete",JOptionPane.YES_NO_OPTION);
  
         if (confirm == JOptionPane.YES_NO_OPTION) {
