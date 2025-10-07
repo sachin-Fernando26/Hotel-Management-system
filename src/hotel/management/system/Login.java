@@ -115,10 +115,10 @@ public class Login extends javax.swing.JFrame {
             pst.setString(2, password);
             ResultSet rs = pst.executeQuery();
             if (rs.next()) {
-            // If a record exists -> Login success
+            
             JOptionPane.showMessageDialog(this, "Login Successful!");
             
-            //  Open next window
+            //Open next window
              new Home().setVisible(true);
              this.dispose(); 
         } else {
@@ -132,7 +132,7 @@ public class Login extends javax.swing.JFrame {
             
             
         } catch (Exception e) {
-            e.printStackTrace(); // show in console
+            e.printStackTrace(); //show in console
              JOptionPane.showMessageDialog(this, "Error: " + e.getMessage());
         }
     }//GEN-LAST:event_btnLoginActionPerformed

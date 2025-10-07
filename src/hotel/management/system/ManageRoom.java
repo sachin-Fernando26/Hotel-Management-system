@@ -208,7 +208,7 @@ public class ManageRoom extends javax.swing.JFrame {
 
     private void btnSerachActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSerachActionPerformed
         // TODO add your handling code here:
-        // Read and validate ID
+        //validate ID
     String idText = txtId.getText().trim();
     int roomID;
     try {
@@ -229,7 +229,7 @@ public class ManageRoom extends javax.swing.JFrame {
 
         if (rsCheck.next() && rsCheck.getInt(1) > 0) {
 
-            //  Fetch data and load into table
+            // Fetch data and load into table
             String sql = "SELECT roomID, roomType, bed, price FROM room WHERE roomID = ?";
             PreparedStatement pst = conn.prepareStatement(sql);
             pst.setInt(1, roomID);
@@ -237,7 +237,7 @@ public class ManageRoom extends javax.swing.JFrame {
 
             jTable1.setModel(DbUtils.resultSetToTableModel(rs));
 
-            //  Fill right-side fields from the table model
+            //Fill fields from the table model
             if (jTable1.getRowCount() > 0) {
                 int modelRow = jTable1.convertRowIndexToModel(0); // first (and only) row
 
@@ -259,7 +259,7 @@ public class ManageRoom extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Room ID does not exist.");
         }
 
-        // Close check resources
+       
         rsCheck.close();
         pstCheck.close();
         conn.close();

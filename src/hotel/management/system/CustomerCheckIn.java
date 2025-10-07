@@ -253,7 +253,7 @@ public class CustomerCheckIn extends javax.swing.JFrame {
 
         int totalPrice = price * days;
 
-        //Date parse(yyyy/MM/dd)
+        //Date parse
         java.sql.Date checkinDate;
         try {
             java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("yyyy/MM/dd");
