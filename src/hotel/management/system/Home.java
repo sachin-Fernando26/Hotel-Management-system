@@ -59,7 +59,7 @@ public class Home extends javax.swing.JFrame {
         btnCheckIN.setBackground(new java.awt.Color(204, 204, 204));
         btnCheckIN.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btnCheckIN.setForeground(new java.awt.Color(51, 51, 51));
-        btnCheckIN.setText("Customer Check In");
+        btnCheckIN.setText("Customer CheckIn");
         btnCheckIN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCheckINActionPerformed(evt);
