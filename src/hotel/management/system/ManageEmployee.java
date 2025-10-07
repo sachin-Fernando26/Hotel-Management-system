@@ -419,7 +419,7 @@ public class ManageEmployee extends javax.swing.JFrame {
             "jdbc:mysql://localhost:3306/hotel?zeroDateTimeBehavior=CONVERT_TO_NULL",
             "root", "")) {
 
-           InputStream jasper = getClass().getResourceAsStream("/report/employeeReport.jasper");
+           InputStream jasper = getClass().getResourceAsStream("/Report/employeeReport.jasper");
             if (jasper == null) throw new FileNotFoundException("Missing /reportsGenerate/employeeReport.jasper");
 
              JasperPrint jp = JasperFillManager.fillReport(jasper, new HashMap<>(), conn);
